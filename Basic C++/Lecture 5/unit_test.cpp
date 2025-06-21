@@ -6,11 +6,12 @@ using namespace std;
 
 // import your test module here
 #include "seive.cpp"
+#include "fibonacci.cpp"
 
 int test(){
     // call your test function here 
-    seive_eratos(156985);
-    return 0;
+    // seive_eratos(156985);
+    return nth_fibonacci(46);
 }
 
 int main (){
