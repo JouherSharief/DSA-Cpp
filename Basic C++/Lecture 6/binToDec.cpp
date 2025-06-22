@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int power(int a, int n){
@@ -27,5 +28,17 @@ int binDec (string binary) {
 }
 
 int main () {
-    cout << binDec("110");
+    // cout << binDec("110");
+    vector<int> arr ={1,19,4,-29,10};
+    int size = arr.size();
+    int maximum = arr[0];
+    int minimum = arr[0];
+    for (int i = 0; i < size; i++) {
+        maximum = max(maximum,arr[i]);
+        minimum = min(minimum, arr[i]);
+    }
+
+    cout << maximum <<endl;
+    cout << minimum <<endl;
+
 }
